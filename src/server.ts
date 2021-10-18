@@ -24,9 +24,9 @@ import bodyParser from 'body-parser';
 
     // Root Endpoint
     // Displays a simple message to the user
-    app.get('/', async (_req: Request, res: Response) => {
-        res.send('try GET /filteredimage?image_url={{}}');
-    });
+    // app.get('/', async (_req: Request, res: Response) => {
+    //     res.send('try GET /filteredimage?image_url={{}}');
+    // });
 
     app.get('/', async (_req: Request, res: Response) => {
         res.send('Hello World EB');
