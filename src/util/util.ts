@@ -32,3 +32,8 @@ export async function deleteLocalFiles(files: Array<string>) {
         fs.unlinkSync(file);
     }
 }
+
+export function divide(a: number, b: number) {
+    if (b === 0) throw new Error('Divide by zero error');
+    return a / b;
+}
