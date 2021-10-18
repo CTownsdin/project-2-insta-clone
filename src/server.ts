@@ -28,6 +28,10 @@ import bodyParser from 'body-parser';
         res.send('try GET /filteredimage?image_url={{}}');
     });
 
+    app.get('/', async (_req: Request, res: Response) => {
+        res.send('Hello World EB');
+    });
+
     app.listen(port, () => {
         console.log(`server running http://localhost:${port}`);
         console.log(`press CTRL+C to stop server`);
