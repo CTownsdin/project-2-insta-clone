@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
-import { filterImageFromURL, deleteLocalFiles } from './util/util';
+// import { filterImageFromURL, deleteLocalFiles } from './util/util';
 
 (async () => {
     const app = express();
@@ -24,7 +24,7 @@ import { filterImageFromURL, deleteLocalFiles } from './util/util';
 
     // Root Endpoint
     // Displays a simple message to the user
-    app.get('/', async (req: Request, res: Response) => {
+    app.get('/', async (_req: Request, res: Response) => {
         res.send('try GET /filteredimage?image_url={{}}');
     });
 
