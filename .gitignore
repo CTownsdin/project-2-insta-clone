@@ -109,3 +109,6 @@ dist
 !.elasticbeanstalk/*.global.yml
 
 DEVNOTES.txt
+
+# build directory
+www/
